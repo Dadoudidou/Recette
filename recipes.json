@@ -1,0 +1,111 @@
+{
+  "_type": "export",
+  "__export_format": 1,
+  "__export_date": "2016-12-23T15:01:00.785Z",
+  "__export_source": "insomnia.chrome.app:v2.7.0",
+  "items": [
+    {
+      "_type": "request_group",
+      "_id": "grp_1482249487857",
+      "name": "Recipes",
+      "environments": {},
+      "requests": [
+        {
+          "_type": "request",
+          "_id": "req_1482249487857",
+          "url": "http://recipes.local.com:8090/recettes",
+          "method": "GET",
+          "body": "{}",
+          "headers": [],
+          "params": [],
+          "authentication": {
+            "_type": "basic",
+            "username": "",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "Gets"
+        },
+        {
+          "_type": "request",
+          "_id": "req_1482394463664",
+          "url": "http://recipes.local.com:8090/recettes/3",
+          "method": "GET",
+          "body": "{}",
+          "headers": [],
+          "params": [],
+          "authentication": {
+            "_type": "basic",
+            "username": "",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "Get One"
+        },
+        {
+          "_type": "request",
+          "_id": "req_1482249496041",
+          "url": "http://recipes.local.com:8090/recettes",
+          "method": "POST",
+          "body": "{\n    \"nom\" : \"plouch\",\n    \"ingredients\":[\n        {\n            \"quantite\": 200,\n            \"unite\":\"ml\",\n            \"ingredient\":{\n                \"nom\":\"mystère et boule de gomme\"\n            }\n        }\n    ]\n}",
+          "headers": [],
+          "params": [],
+          "authentication": {
+            "_type": "basic",
+            "username": "",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "Create"
+        },
+        {
+          "_type": "request",
+          "_id": "req_1482393991164",
+          "url": "http://recipes.local.com:8090/recettes/2",
+          "method": "DELETE",
+          "body": "{}",
+          "headers": [],
+          "params": [],
+          "authentication": {
+            "_type": "basic",
+            "username": "",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "Delete"
+        },
+        {
+          "_type": "request",
+          "_id": "req_1482394710507",
+          "url": "http://recipes.local.com:8090/recettes/3",
+          "method": "PUT",
+          "body": "{\n    \"nom\": \"plouch et gomme\",\n    \"ingredients\":[\n        {\n            \"recette_id\": \"3\",\n            \"ingredient_id\": \"3\",\n            \"quantite\": 600\n        }\n    ]\n}",
+          "headers": [],
+          "params": [],
+          "authentication": {
+            "_type": "basic",
+            "username": "",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "update"
+        }
+      ]
+    }
+  ]
+}
