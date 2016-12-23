@@ -1,0 +1,23 @@
+﻿/// <reference path="../../../node_modules/react-mat/sass/globals/_variables.scss" />
+
+// navbar
+.navbar {
+    .input-field {
+
+        input, input:focus, 
+        textarea.materialize-textarea, textarea.materialize-textarea:focus {
+            color: $navbar-link-color;
+            border-color: $navbar-link-color;
+
+            & + label {
+                color: $navbar-link-color;
+            }
+        }
+                
+    }
+}
+
+//card
+.card {
+    margin-bottom: 2em;
+}

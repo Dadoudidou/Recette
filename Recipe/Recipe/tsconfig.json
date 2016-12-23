@@ -1,0 +1,15 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "sourceMap": false,
+    "target": "es5",
+    "module": "commonjs",
+    "jsx": "react",
+    "declaration": false
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+}

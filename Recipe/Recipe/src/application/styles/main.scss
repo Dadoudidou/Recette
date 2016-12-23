@@ -1,0 +1,43 @@
+﻿/// <reference path="../../../node_modules/react-mat/sass/globals/_variables.scss" />
+
+@import "~dadou-react-mat/sass/globals/_colors.scss";
+
+$primary-color: color("blue", "base") !default;
+
+@import "~dadou-react-mat/sass/index.scss";
+@import "_toupdate.scss";
+
+
+
+@import "_helper.scss";
+
+
+
+//navbar
+.navbar {
+    
+    .input-field {
+        input, input:focus {
+            height: 4rem;
+            font-size: 2rem;
+            background: #fff;
+            border:0;
+            color: #555;   
+            padding: 1rem; 
+            box-sizing: border-box;
+            margin-bottom: 2px;
+        }
+        input {
+            @extend .z-depth-1;
+            &:focus {
+                @extend .z-depth-2;
+            }
+        }
+    }
+}
+
+.card-title {
+    background: color("grey", "base");
+    color: #fff;
+}
+

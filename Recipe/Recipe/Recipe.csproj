@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{0E5D234A-C920-4113-A92F-5A8C59F50F82}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>2.1</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\application\index.html" />
+    <Content Include="src\application\routes\Home\assets\Firefox.png" />
+    <Content Include="vendors\font-awesome\css\font-awesome.css" />
+    <Content Include="vendors\font-awesome\css\font-awesome.min.css" />
+    <Content Include="vendors\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="vendors\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="webpack.config.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\application\modules\index.ts" />
+    <TypeScriptCompile Include="src\application\modules\Recette\actions\index.ts" />
+    <TypeScriptCompile Include="src\application\modules\Recette\actions\Ingredient.ts" />
+    <TypeScriptCompile Include="src\application\modules\Recette\actions\Recette.ts" />
+    <TypeScriptCompile Include="src\application\modules\Recette\actions\Unite.ts" />
+    <TypeScriptCompile Include="src\application\modules\Recette\gets\index.ts" />
+    <TypeScriptCompile Include="src\application\modules\Recette\gets\Ingredient.ts" />
+    <TypeScriptCompile Include="src\application\modules\Recette\index.ts" />
+    <TypeScriptCompile Include="src\application\modules\Recette\models\index.ts" />
+    <TypeScriptCompile Include="src\application\modules\Recette\models\Ingredient.ts" />
+    <TypeScriptCompile Include="src\application\modules\Recette\models\Recette.ts" />
+    <TypeScriptCompile Include="src\application\modules\Recette\models\Unite.ts" />
+    <TypeScriptCompile Include="src\application\modules\Recette\reducers\index.ts" />
+    <TypeScriptCompile Include="src\application\routes\Search\components\RecetteCard.tsx" />
+    <TypeScriptCompile Include="src\application\routes\Search\components\RecetteList.tsx" />
+    <TypeScriptCompile Include="src\application\routes\Search\Search.tsx" />
+    <TypeScriptCompile Include="src\components\Authenticated.tsx" />
+    <TypeScriptCompile Include="src\application\containers\AppContainer.tsx" />
+    <TypeScriptCompile Include="src\application\layouts\AppLayout\AppLayout.tsx" />
+    <TypeScriptCompile Include="src\application\layouts\ConnectedLayout\ConnectedLayout.tsx" />
+    <TypeScriptCompile Include="src\main.tsx" />
+    <TypeScriptCompile Include="src\application\routes\About\About.tsx" />
+    <TypeScriptCompile Include="src\application\routes\About\index.ts" />
+    <TypeScriptCompile Include="src\application\routes\About\modules\about.ts" />
+    <TypeScriptCompile Include="src\application\routes\Home\Home.tsx" />
+    <TypeScriptCompile Include="src\application\routes\index.ts" />
+    <TypeScriptCompile Include="src\application\routes\Search\index.ts" />
+    <TypeScriptCompile Include="src\application\routes\Users\index.ts" />
+    <TypeScriptCompile Include="src\application\routes\Users\Login.tsx" />
+    <TypeScriptCompile Include="src\lib\store\actions.ts" />
+    <TypeScriptCompile Include="src\lib\store\createStore.ts" />
+    <TypeScriptCompile Include="src\lib\store\reducers.ts" />
+    <TypeScriptCompile Include="typings\env.d.ts" />
+    <TypeScriptCompile Include="typings\globals\immutable\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\object-assign\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\react-dom\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\react-redux\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\react-router\history.d.ts" />
+    <TypeScriptCompile Include="typings\globals\react-router\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\react\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\redux-logger\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\redux-orm\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\redux-thunk\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\redux\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="src\application\routes\Home\Home.scss" />
+    <Content Include="src\application\styles\main.scss" />
+    <Content Include="src\application\styles\_helper.scss" />
+    <Content Include="src\application\styles\_sidebar.scss" />
+    <Content Include="tsconfig.json" />
+    <Content Include="typings.json" />
+    <Content Include="typings\globals\immutable\typings.json" />
+    <Content Include="typings\globals\object-assign\typings.json" />
+    <Content Include="typings\globals\react-dom\typings.json" />
+    <Content Include="typings\globals\react-redux\typings.json" />
+    <Content Include="typings\globals\react-router\typings.json" />
+    <Content Include="typings\globals\react\typings.json" />
+    <Content Include="typings\globals\redux-logger\typings.json" />
+    <Content Include="typings\globals\redux-thunk\typings.json" />
+    <Content Include="typings\globals\redux\typings.json" />
+    <Content Include="vendors\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="vendors\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="vendors\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="vendors\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="vendors\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="vendors\font-awesome\less\animated.less" />
+    <Content Include="vendors\font-awesome\less\bordered-pulled.less" />
+    <Content Include="vendors\font-awesome\less\core.less" />
+    <Content Include="vendors\font-awesome\less\fixed-width.less" />
+    <Content Include="vendors\font-awesome\less\font-awesome.less" />
+    <Content Include="vendors\font-awesome\less\icons.less" />
+    <Content Include="vendors\font-awesome\less\larger.less" />
+    <Content Include="vendors\font-awesome\less\list.less" />
+    <Content Include="vendors\font-awesome\less\mixins.less" />
+    <Content Include="vendors\font-awesome\less\path.less" />
+    <Content Include="vendors\font-awesome\less\rotated-flipped.less" />
+    <Content Include="vendors\font-awesome\less\screen-reader.less" />
+    <Content Include="vendors\font-awesome\less\stacked.less" />
+    <Content Include="vendors\font-awesome\less\variables.less" />
+    <Content Include="vendors\font-awesome\scss\font-awesome.scss" />
+    <Content Include="vendors\font-awesome\scss\_animated.scss" />
+    <Content Include="vendors\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="vendors\font-awesome\scss\_core.scss" />
+    <Content Include="vendors\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="vendors\font-awesome\scss\_icons.scss" />
+    <Content Include="vendors\font-awesome\scss\_larger.scss" />
+    <Content Include="vendors\font-awesome\scss\_list.scss" />
+    <Content Include="vendors\font-awesome\scss\_mixins.scss" />
+    <Content Include="vendors\font-awesome\scss\_path.scss" />
+    <Content Include="vendors\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="vendors\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="vendors\font-awesome\scss\_stacked.scss" />
+    <Content Include="vendors\font-awesome\scss\_variables.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\application\static\" />
+    <Folder Include="src\modules\" />
+    <Folder Include="src\utils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\application\styles\_toupdate.scss" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Recipe</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58019</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58019/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>
