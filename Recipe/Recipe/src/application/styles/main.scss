@@ -2,7 +2,7 @@
 
 @import "~dadou-react-mat/sass/globals/_colors.scss";
 
-$primary-color: color("blue", "base") !default;
+$primary-color: #F57C00 !default;
 
 @import "~dadou-react-mat/sass/index.scss";
 @import "_toupdate.scss";
@@ -12,6 +12,21 @@ $primary-color: color("blue", "base") !default;
 @import "_helper.scss";
 
 
+
+.container {
+    width: 1100px;
+    margin:0 auto;
+}
+
+.chip_ingredient {
+    background-color: #9C27B0;
+    color: #fff;
+}
+
+.chip_tag {
+    background-color: #3F51B5;
+    color: #fff;
+}
 
 //navbar
 .navbar {

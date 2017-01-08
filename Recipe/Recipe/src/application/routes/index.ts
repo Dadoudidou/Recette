@@ -5,6 +5,7 @@ import IndexComponent from "./Search/Search";
 
 import usersRoutes from "./Users";
 import searchRoutes from "./Search";
+import viewRoutes from "./View";
 
 export const createRoutes = (store): ReactRouter.PlainRoute => {
 
@@ -17,7 +18,8 @@ export const createRoutes = (store): ReactRouter.PlainRoute => {
 
     configRoutes.childRoutes = configRoutes.childRoutes.concat(
         usersRoutes(store),
-        searchRoutes(store)
+        searchRoutes(store),
+        viewRoutes(store)
     );
 
     return configRoutes;

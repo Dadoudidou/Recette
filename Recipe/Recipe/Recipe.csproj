@@ -33,17 +33,20 @@
   <ItemGroup>
     <TypeScriptCompile Include="src\application\modules\index.ts" />
     <TypeScriptCompile Include="src\application\modules\Recette\actions\index.ts" />
-    <TypeScriptCompile Include="src\application\modules\Recette\actions\Ingredient.ts" />
     <TypeScriptCompile Include="src\application\modules\Recette\actions\Recette.ts" />
-    <TypeScriptCompile Include="src\application\modules\Recette\actions\Unite.ts" />
     <TypeScriptCompile Include="src\application\modules\Recette\gets\index.ts" />
     <TypeScriptCompile Include="src\application\modules\Recette\gets\Ingredient.ts" />
     <TypeScriptCompile Include="src\application\modules\Recette\index.ts" />
     <TypeScriptCompile Include="src\application\modules\Recette\models\index.ts" />
     <TypeScriptCompile Include="src\application\modules\Recette\models\Ingredient.ts" />
     <TypeScriptCompile Include="src\application\modules\Recette\models\Recette.ts" />
+    <TypeScriptCompile Include="src\application\modules\Recette\models\search.ts" />
     <TypeScriptCompile Include="src\application\modules\Recette\models\Unite.ts" />
     <TypeScriptCompile Include="src\application\modules\Recette\reducers\index.ts" />
+    <TypeScriptCompile Include="src\application\routes\Search\actions.ts" />
+    <TypeScriptCompile Include="src\application\routes\Search\reducer.ts" />
+    <TypeScriptCompile Include="src\application\routes\View\index.ts" />
+    <TypeScriptCompile Include="src\application\routes\View\View.tsx" />
     <TypeScriptCompile Include="src\application\routes\Search\components\RecetteCard.tsx" />
     <TypeScriptCompile Include="src\application\routes\Search\components\RecetteList.tsx" />
     <TypeScriptCompile Include="src\application\routes\Search\Search.tsx" />
@@ -63,15 +66,8 @@
     <TypeScriptCompile Include="src\lib\store\actions.ts" />
     <TypeScriptCompile Include="src\lib\store\createStore.ts" />
     <TypeScriptCompile Include="src\lib\store\reducers.ts" />
+    <TypeScriptCompile Include="src\utils\ajax.ts" />
     <TypeScriptCompile Include="typings\env.d.ts" />
-    <TypeScriptCompile Include="typings\globals\immutable\index.d.ts" />
-    <TypeScriptCompile Include="typings\globals\object-assign\index.d.ts" />
-    <TypeScriptCompile Include="typings\globals\react-dom\index.d.ts" />
-    <TypeScriptCompile Include="typings\globals\react-redux\index.d.ts" />
-    <TypeScriptCompile Include="typings\globals\react-router\history.d.ts" />
-    <TypeScriptCompile Include="typings\globals\react-router\index.d.ts" />
-    <TypeScriptCompile Include="typings\globals\react\index.d.ts" />
-    <TypeScriptCompile Include="typings\globals\redux-logger\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\redux-orm\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\redux-thunk\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\redux\index.d.ts" />
@@ -85,13 +81,6 @@
     <Content Include="src\application\styles\_sidebar.scss" />
     <Content Include="tsconfig.json" />
     <Content Include="typings.json" />
-    <Content Include="typings\globals\immutable\typings.json" />
-    <Content Include="typings\globals\object-assign\typings.json" />
-    <Content Include="typings\globals\react-dom\typings.json" />
-    <Content Include="typings\globals\react-redux\typings.json" />
-    <Content Include="typings\globals\react-router\typings.json" />
-    <Content Include="typings\globals\react\typings.json" />
-    <Content Include="typings\globals\redux-logger\typings.json" />
     <Content Include="typings\globals\redux-thunk\typings.json" />
     <Content Include="typings\globals\redux\typings.json" />
     <Content Include="vendors\font-awesome\fonts\fontawesome-webfont.eot" />
@@ -131,7 +120,6 @@
   <ItemGroup>
     <Folder Include="src\application\static\" />
     <Folder Include="src\modules\" />
-    <Folder Include="src\utils\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="src\application\styles\_toupdate.scss" />

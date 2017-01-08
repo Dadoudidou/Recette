@@ -2,10 +2,11 @@
 import { Unite } from "./Unite"
 import * as assign from "object-assign";
 
-export interface IRecetteIngredients {
-    ingredient: Ingredient
-    quantite: number
-    unite: Unite
+export interface IRecetteIngredients extends Ingredient {
+    _joinData: {
+        quantite: number
+        unite: string
+    }
 }
 
 var id = 1;
@@ -15,14 +16,14 @@ export class Recette {
     readonly __id: number
     id: number
 
-    titre: string
+    nom: string
     description: string
     image: string
 
-    realisation: string
+    instructions: string
     ingredients: IRecetteIngredients[] = []
 
-    nbParts: number
+    nbPart: number
     nbPointsWW: number
 
     constructor(init?: Partial<Recette>) {

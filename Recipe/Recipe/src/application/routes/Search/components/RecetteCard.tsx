@@ -13,7 +13,7 @@ class RecetteCard extends React.Component<IRecetteCardProps, any> {
         return (
             <Card height={300}>
                 <CardTitle textBottom>
-                    <h5>{this.props.recette.titre}</h5>
+                    <h5>{this.props.recette.nom}</h5>
                 </CardTitle>
                 <CardText>
                     {this.props.recette.description}
